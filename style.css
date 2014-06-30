@@ -6,12 +6,12 @@ body {
 h1 {
 color:black;
 background: #36a4b0; /* Old browsers */
-background: -moz-linear-gradient(-45deg,  #36a4b0 0%, #5ecaba 32%, #58ccce 32%, #44c8cc 59%, #9ae2e2 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#36a4b0), color-stop(32%,#5ecaba), color-stop(32%,#58ccce), color-stop(59%,#44c8cc), color-stop(100%,#9ae2e2)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(-45deg,  #36a4b0 0%,#5ecaba 32%,#58ccce 32%,#44c8cc 59%,#9ae2e2 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(-45deg,  #36a4b0 0%,#5ecaba 32%,#58ccce 32%,#44c8cc 59%,#9ae2e2 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(-45deg,  #36a4b0 0%,#5ecaba 32%,#58ccce 32%,#44c8cc 59%,#9ae2e2 100%); /* IE10+ */
-background: linear-gradient(135deg,  #36a4b0 0%,#5ecaba 32%,#58ccce 32%,#44c8cc 59%,#9ae2e2 100%); /* W3C */
+background: -moz-linear-gradient(-45deg,  #36a4b0 0%, #5ecaba 32%, #58ccce 32%, #8b43c6 59%, #9ae2e2 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#36a4b0), color-stop(32%,#5ecaba), color-stop(32%,#58ccce), color-stop(59%,#8b43c6), color-stop(100%,#9ae2e2)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  #36a4b0 0%,#5ecaba 32%,#58ccce 32%,#8b43c6 59%,#9ae2e2 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  #36a4b0 0%,#5ecaba 32%,#58ccce 32%,#8b43c6 59%,#9ae2e2 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  #36a4b0 0%,#5ecaba 32%,#58ccce 32%,#8b43c6 59%,#9ae2e2 100%); /* IE10+ */
+background: linear-gradient(135deg,  #36a4b0 0%,#5ecaba 32%,#58ccce 32%,#8b43c6 59%,#9ae2e2 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36a4b0', endColorstr='#9ae2e2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
