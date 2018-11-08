@@ -1,23 +1,113 @@
 <!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" type="text/css" href="content/assets/style.css">
-</head>
-
-<h1>
-	Daniel Mawhirter
-	<br>
-	Project Doumentation
-</h1>
-<p>
-	Colorado School of Mines
-	<br>
-	<a href="https://github.com/ColoradoSchoolOfMines/interface_sdk" target="_blank">Interface SDK</a>
-	<br>
-	<a href="https://github.com/danielmawhirter/places" target="_blank">Important Places Logger</a>
-	<br>
-	Here's a change to test the script	
-</p>
-</body>
-
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daniel Mawhirter CV</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default fixed-top navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Daniel Mawhirter CV</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#bioSection">Bio</a>
+          <a class="nav-item nav-link" href="#awardsSection">Awards</a>
+          <a class="nav-item nav-link" href="#publicationsSection">Publications</a>
+          <a class="nav-item nav-link" href="#educationSection">Education</a>
+        </div>
+      </div>
+    </nav>
+    <!--https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&searchWithin=%22First%20Name%22:Daniel&searchWithin=%22Last%20Name%22:Mawhirter-->
+    <!--https://dblp.uni-trier.de/pers/hd/m/Mawhirter:Daniel-->
+    <!--https://inside.mines.edu/~bwu/-->
+    <div class="container-fluid" id="bioSection">
+      <br>
+      <h3>Bio</h3>
+      <p>
+        I am a PhD Candidate in the Computer Science Department at Colorado School of Mines. My research focuses on high performance Neural Network Inference and Graph Analytics with <a href="https://inside.mines.edu/~bwu/">Assistant Professor Bo Wu</a>. I officially joined the PhD program in January 2017.
+      </p>
+    </div>
+    <div class="container-fluid" id="awardsSection">
+      <h3>Awards</h3>
+      <div class="row">
+        <div class="col">
+          <div class="card card-body">
+            Best Paper Nominee for Graphie at PACT 2017
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-body">
+            Outstanding Undergraduate Researcher in Computer Science 2016
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-body">
+            International 2nd Place in Windward Code Wars 2014
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="publicationsSection">
+      <h3>Publications</h3>
+      <div class="row">
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <div class="card card-body">
+            <h5>[CCGrid 2018] ApproxG: Fast Approximate Parallel Graphlet Counting Through Accuracy Control</h5>
+            <h6>Daniel Mawhirter, Bo Wu, Dinesh Mehta, Chao Ai</h6>
+            <p>Using sampling techniques to accelerate counting of graphlets containing 3 and 4 vertices on a cluster</p>
+            <div class="row">
+              <div class="col"><a class="btn btn-link" href="content/papers/mawhirter2018approxg.pdf" target="_blank" >PDF</a></div>
+              <div class="col"><a class="btn btn-link" href="content/papers/mawhirter2018approxg.bib" target="_blank">BibTex</a></div>
+            </div>
+            <div class="row">
+              <div class="col"><a class="btn btn-link" href="https://ieeexplore.ieee.org/document/8411069" target="_blank">Publication</a></div>
+              <div class="col"><a class="btn btn-link" href="https://bitbucket.org/approxg/approxg" target="_blank">Code</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <div class="card card-body">
+            <h5>[PACT 2017] Graphie: Large-Scale Asynchronous Graph Traversals on Just a GPU</h5>
+            <h6>Wei Han, Daniel Mawhirter, Matthew Buland, Bo Wu</h6>
+            <p>???</p>
+            <div class="row">
+              <div class="col"><a class="btn btn-link" href="content/papers/han2017graphie.pdf" target="_blank" >PDF</a></div>
+              <div class="col"><a class="btn btn-link" href="content/papers/han2017graphie.bib" target="_blank">BibTex</a></div>
+            </div>
+            <div class="row">
+              <div class="col"><a class="btn btn-link" href="https://ieeexplore.ieee.org/abstract/document/8091248" target="_blank">Publication</a></div>
+              <div class="col"><a class="btn btn-link" href="https://bitbucket.org/dalibocai/graphie/src/master/" target="_blank">Code</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="educationSection">
+      <h3>Education</h3>
+      <div class="row">
+        <div class="col-md">
+          <div class="card card-body">
+            [2017-Present] Colorado School of Mines <br>
+            PhD in Computer Science, 4.0 GPA
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card card-body">
+            [2013-2016] Colorado School of Mines <br>
+            BS in Computer Science, 3.84 GPA <br>
+            Graduated Magna Cum Laude in December 2016
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
