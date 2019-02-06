@@ -1,7 +1,26 @@
 [
   {
-    "shorttitle": "ApproxG",
-    "longtitle": "ApproxG: Fast Approximate Parallel Graphlet Counting Through Accuracy Control",
-    "name": "mawhirter2018approxg"
+    "tag": "holmes2019grnn",
+    "title": "[EUROSYS 2019] GRNN: Low-Latency and Scalable RNN Inference on GPUs",
+    "authors": "Connor Holmes, Daniel Mawhirter, Yuxiong He, Feng Yan, Bo Wu",
+    "description": "Accelerating RNN inference on GPU using aggressive, flexible register file utilization optimization",
+    "pub_link": "",
+    "code_link": ""
+  },
+  {
+    "tag": "mawhirter2018approxg",
+    "title": "[CCGrid 2018] ApproxG: Fast Approximate Parallel Graphlet Counting Through Accuracy Control",
+    "authors": "Daniel Mawhirter, Bo Wu, Dinesh Mehta, Chao Ai",
+    "description": "Using sampling techniques to accelerate counting of graphlets containing 3 and 4 vertices on a cluster",
+    "pub_link": "https://ieeexplore.ieee.org/document/8411069",
+    "code_link": "https://bitbucket.org/approxg/approxg"
+  },
+  {
+    "tag": "han2017graphie",
+    "title": "[PACT 2017] Graphie: Large-Scale Asynchronous Graph Traversals on Just a GPU",
+    "authors": "Wei Han, Daniel Mawhirter, Matthew Buland, Bo Wu",
+    "description": "Processing graphs larger than GPU memory using efficient sharding and computation-communication overlapping",
+    "pub_link": "https://ieeexplore.ieee.org/document/8091248",
+    "code_link": "https://bitbucket.org/dalibocai/graphie/src/master/"
   }
 ]
