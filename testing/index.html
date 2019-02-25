@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Sortable - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style name="impostor_size">
+    .marker + li { border-top-width:0px; }
+  </style>
+  <style>
+    body { color:white; font-family:Helvetica, sans-serif;  padding: 10px}
+    ul { float:left; width:300px; overflow:hidden; border-radius:6px; }
+    li { display:block; position:relative; padding:12px 6px; z-index:1; margin:5px 20px; }
+    li:after { background:#18629D; display:block; position:absolute; height:100%; width:100%; top:0px; left:0px; content:' '; border-radius:6px; z-index:-1; }
+    li { -moz-transition:border-top-width 0.1s ease-in; -webkit-transition:border-top-width 0.1s ease-in; border-top:0px solid rgba(0,0,0,0); }
+    .marker { opacity:0.0; }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+    var stylesheet = $('style[name=impostor_size]')[0].sheet;
+    var rule = stylesheet.rules ? stylesheet.rules[0].style : stylesheet.cssRules[0].style;
+    var setPadding = function(atHeight) {
+        rule.cssText = 'border-top-width: '+atHeight+'px';
+    };
+    $( function() {
+      $( "#poster_rank" ).sortable({
+        axis: 'y',
+        placeholder: 'marker',
+        start: function(ev, ui) {
+          setPadding(ui.item.height());
+        },
+        stop: function(ev, ui) {
+          var next = ui.item.next();
+          next.css({'-moz-transition':'none', '-webkit-transition':'none', 'transition':'none'});
+          setTimeout(next.css.bind(next, {'-moz-transition':'border-top-width 0.1s ease-in', '-webkit-transition':'border-top-width 0.1s ease-in', 'transition':'border-top-width 0.1s ease-in'}));
+          }
+        });
+      $( "#poster_rank" ).disableSelection();
+    } );
+  </script>
+</head>
+<body>
+ 
+<ul id="poster_rank">
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+</ul>
+ 
+ 
+</body>
+</html>
