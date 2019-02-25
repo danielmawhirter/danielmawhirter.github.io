@@ -15,8 +15,8 @@
       max-height:100%;
       overflow:hidden;
     }
-    body { color:white; font-family:Helvetica, sans-serif;  padding: 10px}
-    ul { float:left; width:100%; overflow:hidden; border-radius:6px; }
+    body { color:white; font-family:Helvetica, sans-serif; }
+    ul { /*float:left;*/ /*width:100%; overflow:hidden; border-radius:6px;*/ padding: 0; margin: 0; }
     li { display:block; position:relative; padding:12px 6px; z-index:1; margin:5px 20px; }
     li:after { background:#18629D; display:block; position:absolute; height:100%; width:100%; top:0px; left:0px; content:' '; border-radius:6px; z-index:-1; }
     li { -moz-transition:border-top-width 0.1s ease-in; -webkit-transition:border-top-width 0.1s ease-in; border-top:0px solid rgba(0,0,0,0); }
@@ -26,10 +26,10 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="jquery.ui.touch-punch.min.js"></script>
   <script>
-    $('html, body').on('touchstart touchmove', function(e){ 
+    /*$('html, body').on('touchstart touchmove', function(e){ 
       //prevent native touch activity like scrolling
       e.preventDefault(); 
-    });
+    });*/
     var stylesheet = $('style[name=impostor_size]')[0].sheet;
     var rule = stylesheet.rules ? stylesheet.rules[0].style : stylesheet.cssRules[0].style;
     var setPadding = function(atHeight) {
