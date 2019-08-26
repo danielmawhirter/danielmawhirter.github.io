@@ -4,8 +4,8 @@
     "title": "[EUROSYS 2019] GRNN: Low-Latency and Scalable RNN Inference on GPUs",
     "authors": "Connor Holmes, Daniel Mawhirter, Yuxiong He, Feng Yan, Bo Wu",
     "description": "Accelerating RNN inference on GPU using aggressive, flexible register file utilization optimization",
-    "pub_link": "",
-    "code_link": ""
+    "pub_link": "https://dl.acm.org/citation.cfm?id=3303949",
+    "code_link": "https://github.com/cmikeh2/grnn-final"
   },
   {
     "tag": "mawhirter2018approxg",
