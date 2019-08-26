@@ -58,53 +58,7 @@
     </div>
     <div class="container-fluid" id="publicationsSection">
       <h3>Publications</h3>
-      <div class="row">
-        <div class="col-xs-12 col-md-6 col-lg-4">
-          <div class="card card-body">
-            <h5>[EUROSYS 2019] GRNN: Low-Latency and Scalable RNN Inference on GPUs</h5>
-            <h6>Connor Holmes, Daniel Mawhirter, Yuxiong He, Feng Yan, Bo Wu</h6>
-            <p>Accelerating RNN inference on GPU using aggressive, flexible register file utilization optimization</p>
-            <div class="row">
-              <div class="col"><a class="btn btn-link" href="content/papers/holmes2019grnn.pdf" target="_blank">PDF</a></div>
-              <div class="col"><a class="btn btn-link" href="content/papers/holmes2019grnn.bib" target="_blank">BibTex</a></div>
-            </div>
-            <div class="row">
-              <div class="col"><a class="btn btn-link" href="https://dl.acm.org/citation.cfm?id=3303949" target="_blank">Publication</a></div>
-              <div class="col"><a class="btn btn-link" href="https://github.com/cmikeh2/grnn-final" target="_blank">Code</a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-md-6 col-lg-4">
-          <div class="card card-body">
-            <h5>[CCGrid 2018] ApproxG: Fast Approximate Parallel Graphlet Counting Through Accuracy Control</h5>
-            <h6>Daniel Mawhirter, Bo Wu, Dinesh Mehta, Chao Ai</h6>
-            <p>Using sampling techniques to accelerate counting of graphlets containing 3 and 4 vertices on a cluster</p>
-            <div class="row">
-              <div class="col"><a class="btn btn-link" href="content/papers/mawhirter2018approxg.pdf" target="_blank">PDF</a></div>
-              <div class="col"><a class="btn btn-link" href="content/papers/mawhirter2018approxg.bib" target="_blank">BibTex</a></div>
-            </div>
-            <div class="row">
-              <div class="col"><a class="btn btn-link" href="https://ieeexplore.ieee.org/document/8411069" target="_blank">Publication</a></div>
-              <div class="col"><a class="btn btn-link" href="https://bitbucket.org/approxg/approxg" target="_blank">Code</a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-md-6 col-lg-4">
-          <div class="card card-body">
-            <h5>[PACT 2017] Graphie: Large-Scale Asynchronous Graph Traversals on Just a GPU</h5>
-            <h6>Wei Han, Daniel Mawhirter, Matthew Buland, Bo Wu</h6>
-            <p>Processing graphs larger than GPU memory using efficient sharding and computation-communication overlapping</p>
-            <div class="row">
-              <div class="col"><a class="btn btn-link" href="content/papers/han2017graphie.pdf" target="_blank">PDF</a></div>
-              <div class="col"><a class="btn btn-link" href="content/papers/han2017graphie.bib" target="_blank">BibTex</a></div>
-            </div>
-            <div class="row">
-              <div class="col"><a class="btn btn-link" href="https://ieeexplore.ieee.org/abstract/document/8091248" target="_blank">Publication</a></div>
-              <div class="col"><a class="btn btn-link" href="https://bitbucket.org/dalibocai/graphie/src/master/" target="_blank">Code</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="row" id="publicationsRow"></div>
     </div>
     <div class="container-fluid" id="educationSection">
       <h3>Education</h3>
@@ -124,5 +78,27 @@
         </div>
       </div>
     </div>
+    <script>
+      function makeButton(text, link) {
+        return jQuery('<a/>', { "class": 'col btn btn-link', "href": link, "target": '_blank' }).text(text);
+      }
+
+      jQuery.getJSON( "content/paper_index.json", function(data) {
+        pubRow = jQuery('#publicationsRow');
+        jQuery.each(data, function(idx, entry) {
+          pubCol = jQuery('<div/>', { "class": 'col-xs-12 col-md-6 col-lg-4' }).appendTo(pubRow);
+          card = jQuery('<div/>', { "class": 'card card-body' }).appendTo(pubCol);
+          title = jQuery('<h5/>').text(entry["title"]).appendTo(card);
+          authors = jQuery('<h6/>').text(entry["authors"]).appendTo(card);
+          description = jQuery('<p/>').text(entry["description"]).appendTo(card);
+          linkRow1 = jQuery('<div/>', { "class": 'row' }).appendTo(card);
+          pdfLink = makeButton("PDF", ['content/papers/', entry["tag"], '.pdf'].join("")).appendTo(linkRow1);
+          texLink = makeButton("BibTex", ['content/papers/', entry["tag"], '.bib'].join("")).appendTo(linkRow1);
+          linkRow2 = jQuery('<div/>', { "class": 'row' }).appendTo(card);
+          pdfLink = makeButton("Publication", entry["pub_link"]).appendTo(linkRow2);
+          texLink = makeButton("Code", entry["code_link"]).appendTo(linkRow2);
+        });
+      });
+    </script>
   </body>
 </html>
