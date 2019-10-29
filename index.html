@@ -80,6 +80,7 @@
     </div>
     <script>
       function makeButton(text, link) {
+        if(link === "") return jQuery('<a/>');
         return jQuery('<a/>', { "class": 'col btn btn-link', "href": link, "target": '_blank' }).text(text);
       }
 

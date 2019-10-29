@@ -1,5 +1,21 @@
 [
   {
+    "tag": "mawhirter2019automine",
+    "title": "[SOSP 2019] AutoMine: Harmonizing High-Level Abstraction and High Performance for Graph Mining",
+    "authors": "Daniel Mawhirter, Bo Wu",
+    "description": "Compiling subgraph patterns into efficient code for mining them",
+    "pub_link": "",
+    "code_link": ""
+  },
+  {
+    "tag": "zhang2019laius",
+    "title": "[ICS 2019] Laius: Towards Latency Awareness and Improved Utilization of Spatial Multitasking Accelerators in Datacenters",
+    "authors": "Wei Zhang, Weihao Cui, Kaihua Fu, Quan Chen, Daniel Mawhirter, Bo Wu, Chao Li, Minyi Guo",
+    "description": "Compiling subgraph patterns into efficient code for mining them",
+    "pub_link": "https://dl.acm.org/citation.cfm?id=3330351",
+    "code_link": ""
+  },
+  {
     "tag": "holmes2019grnn",
     "title": "[EUROSYS 2019] GRNN: Low-Latency and Scalable RNN Inference on GPUs",
     "authors": "Connor Holmes, Daniel Mawhirter, Yuxiong He, Feng Yan, Bo Wu",
