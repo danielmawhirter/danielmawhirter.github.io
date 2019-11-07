@@ -11,7 +11,7 @@
     "tag": "zhang2019laius",
     "title": "[ICS 2019] Laius: Towards Latency Awareness and Improved Utilization of Spatial Multitasking Accelerators in Datacenters",
     "authors": "Wei Zhang, Weihao Cui, Kaihua Fu, Quan Chen, Daniel Mawhirter, Bo Wu, Chao Li, Minyi Guo",
-    "description": "Compiling subgraph patterns into efficient code for mining them",
+    "description": "GPU multitasking using dynamic, latency-aware scheduling",
     "pub_link": "https://dl.acm.org/citation.cfm?id=3330351",
     "code_link": ""
   },
