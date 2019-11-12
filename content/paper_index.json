@@ -3,7 +3,7 @@
     "tag": "mawhirter2019automine",
     "title": "[SOSP 2019] AutoMine: Harmonizing High-Level Abstraction and High Performance for Graph Mining",
     "authors": "Daniel Mawhirter, Bo Wu",
-    "description": "Compiling subgraph patterns into efficient code for mining them",
+    "description": "Creating a topology-centric compiler for graph mining which minimizes intermediate data to obtain ~10<sup>6</sup> memory reduction and ~10<sup>5</sup> speedup",
     "pub_link": "https://dl.acm.org/citation.cfm?id=3341301.3359633",
     "code_link": ""
   },

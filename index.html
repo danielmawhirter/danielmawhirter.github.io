@@ -1,105 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Daniel Mawhirter CV</title>
+
+            [2013-2016] Colorado School of Mines <br>
+            [2017-Present] Colorado School of Mines <br>
+            Best Paper Nominee for Graphie at PACT 2017
+            BS in Computer Science, 3.84 GPA <br>
+            Graduated Magna Cum Laude in December 2016
+            International 2nd Place in Windward Code Wars 2014
+            Outstanding Undergraduate Researcher in Computer Science 2016
+            PhD in Computer Science, 4.0 GPA
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          <a class="nav-item nav-link active" href="#bioSection">Bio</a>
+          <a class="nav-item nav-link" href="#awardsSection">Awards</a>
+          <a class="nav-item nav-link" href="#educationSection">Education</a>
+          <a class="nav-item nav-link" href="#publicationsSection">Publications</a>
+          <div class="card card-body">
+          <div class="card card-body">
+          <div class="card card-body">
+          <div class="card card-body">
+          <div class="card card-body">
+          authors = jQuery('<h6/>').text(entry["authors"]).appendTo(card);
+          card = jQuery('<div/>', { "class": 'card card-body' }).appendTo(pubCol);
+          description = jQuery('<p/>').html(entry["description"]).appendTo(card);
+          linkRow1 = jQuery('<div/>', { "class": 'row' }).appendTo(card);
+          linkRow2 = jQuery('<div/>', { "class": 'row' }).appendTo(card);
+          pdfLink = makeButton("PDF", ['content/papers/', entry["tag"], '.pdf'].join("")).appendTo(linkRow1);
+          pdfLink = makeButton("Publication", entry["pub_link"]).appendTo(linkRow2);
+          pubCol = jQuery('<div/>', { "class": 'col-xs-12 col-md-6 col-lg-4 mb-3' }).appendTo(pubRow);
+          texLink = makeButton("BibTex", ['content/papers/', entry["tag"], '.bib'].join("")).appendTo(linkRow1);
+          texLink = makeButton("Code", entry["code_link"]).appendTo(linkRow2);
+          title = jQuery('<h5/>').text(entry["title"]).appendTo(card);
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="col">
+        <div class="col">
+        <div class="col-md">
+        <div class="col-md">
+        <div class="navbar-nav">
+        <span class="navbar-toggler-icon"></span>
+        I am a PhD Candidate in the Computer Science Department at Colorado School of Mines. My research focuses on high performance Neural Network Inference and Graph Analytics with <a href="https://inside.mines.edu/~bwu/">Associate Professor Bo Wu</a>. I officially joined the PhD program in January 2017.
+        if(link === "") return jQuery('<a/>');
+        jQuery.each(data, function(idx, entry) {
+        pubRow = jQuery('#publicationsRow');
+        return jQuery('<a/>', { "class": 'col btn btn-link', "href": link, "target": '_blank' }).text(text);
+        });
+      </button>
+      </div>
+      </div>
+      </div>
+      </p>
+      <a class="navbar-brand" href="#">Daniel Mawhirter CV</a>
+      <br>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="row align-items-center" id="publicationsRow"></div>
+      <div class="row">
+      <div class="row">
+      <h3>Awards</h3>
+      <h3>Bio</h3>
+      <h3>Education</h3>
+      <h3>Publications</h3>
+      <p>
+      function makeButton(text, link) {
+      jQuery.getJSON( "content/paper_index.json", function(data) {
+      }
+      });
+    <!--https://dblp.uni-trier.de/pers/hd/m/Mawhirter:Daniel-->
+    <!--https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&searchWithin=%22First%20Name%22:Daniel&searchWithin=%22Last%20Name%22:Mawhirter-->
+    <!--https://inside.mines.edu/~bwu/-->
+    </div>
+    </div>
+    </div>
+    </div>
+    </nav>
+    </script>
+    <div class="container-fluid" id="awardsSection">
+    <div class="container-fluid" id="bioSection">
+    <div class="container-fluid" id="educationSection">
+    <div class="container-fluid" id="publicationsSection">
     <link rel="icon" type="image/png" href="favicon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <nav class="navbar navbar-default fixed-top navbar-expand-md navbar-dark bg-dark">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <script>
+    <title>Daniel Mawhirter CV</title>
+  </body>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <nav class="navbar navbar-default fixed-top navbar-expand-md navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Daniel Mawhirter CV</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#bioSection">Bio</a>
-          <a class="nav-item nav-link" href="#awardsSection">Awards</a>
-          <a class="nav-item nav-link" href="#publicationsSection">Publications</a>
-          <a class="nav-item nav-link" href="#educationSection">Education</a>
-        </div>
-      </div>
-    </nav>
-    <!--https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&searchWithin=%22First%20Name%22:Daniel&searchWithin=%22Last%20Name%22:Mawhirter-->
-    <!--https://dblp.uni-trier.de/pers/hd/m/Mawhirter:Daniel-->
-    <!--https://inside.mines.edu/~bwu/-->
-    <div class="container-fluid" id="bioSection">
-      <br>
-      <h3>Bio</h3>
-      <p>
-        I am a PhD Candidate in the Computer Science Department at Colorado School of Mines. My research focuses on high performance Neural Network Inference and Graph Analytics with <a href="https://inside.mines.edu/~bwu/">Associate Professor Bo Wu</a>. I officially joined the PhD program in January 2017.
-      </p>
-    </div>
-    <div class="container-fluid" id="awardsSection">
-      <h3>Awards</h3>
-      <div class="row">
-        <div class="col">
-          <div class="card card-body">
-            Best Paper Nominee for Graphie at PACT 2017
-          </div>
-        </div>
-        <div class="col">
-          <div class="card card-body">
-            Outstanding Undergraduate Researcher in Computer Science 2016
-          </div>
-        </div>
-        <div class="col">
-          <div class="card card-body">
-            International 2nd Place in Windward Code Wars 2014
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid" id="publicationsSection">
-      <h3>Publications</h3>
-      <div class="row" id="publicationsRow"></div>
-    </div>
-    <div class="container-fluid" id="educationSection">
-      <h3>Education</h3>
-      <div class="row">
-        <div class="col-md">
-          <div class="card card-body">
-            [2017-Present] Colorado School of Mines <br>
-            PhD in Computer Science, 4.0 GPA
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="card card-body">
-            [2013-2016] Colorado School of Mines <br>
-            BS in Computer Science, 3.84 GPA <br>
-            Graduated Magna Cum Laude in December 2016
-          </div>
-        </div>
-      </div>
-    </div>
-    <script>
-      function makeButton(text, link) {
-        if(link === "") return jQuery('<a/>');
-        return jQuery('<a/>', { "class": 'col btn btn-link', "href": link, "target": '_blank' }).text(text);
-      }
-
-      jQuery.getJSON( "content/paper_index.json", function(data) {
-        pubRow = jQuery('#publicationsRow');
-        jQuery.each(data, function(idx, entry) {
-          pubCol = jQuery('<div/>', { "class": 'col-xs-12 col-md-6 col-lg-4' }).appendTo(pubRow);
-          card = jQuery('<div/>', { "class": 'card card-body' }).appendTo(pubCol);
-          title = jQuery('<h5/>').text(entry["title"]).appendTo(card);
-          authors = jQuery('<h6/>').text(entry["authors"]).appendTo(card);
-          description = jQuery('<p/>').text(entry["description"]).appendTo(card);
-          linkRow1 = jQuery('<div/>', { "class": 'row' }).appendTo(card);
-          pdfLink = makeButton("PDF", ['content/papers/', entry["tag"], '.pdf'].join("")).appendTo(linkRow1);
-          texLink = makeButton("BibTex", ['content/papers/', entry["tag"], '.bib'].join("")).appendTo(linkRow1);
-          linkRow2 = jQuery('<div/>', { "class": 'row' }).appendTo(card);
-          pdfLink = makeButton("Publication", entry["pub_link"]).appendTo(linkRow2);
-          texLink = makeButton("Code", entry["code_link"]).appendTo(linkRow2);
-        });
-      });
-    </script>
-  </body>
+  <head>
+<!DOCTYPE html>
 </html>
+<html lang="en">
